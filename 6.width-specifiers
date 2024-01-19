@@ -1,0 +1,15 @@
+#!/bin/bash
+#: Title        : width-specification
+#: Date         : 2024-01-19
+#: Author       : Panupong Chamsomboon
+#: Version      : 1.0
+#: Descrtion    : Show information about Width Specifiers
+#: Options      : None
+
+echo "---------- width space for string ------------"
+printf "%8s %-15s:\n" first second third fourth fifth sixth
+
+
+echo "---------- padded with leading zeros ------------"
+printf "%05d\n" 15 23 56 123 255
+
