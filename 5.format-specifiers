@@ -1,0 +1,28 @@
+#!/bin/bash
+#: Title        : format-specifiers
+#: Date         : 2024-01-19
+#: Author       : Panupong Chamsomboon
+#: Version      : 1.0
+#: Descrtion    : show information about Format Specifiers
+#: Options      : None
+
+echo "------ %s ---------------"
+printf "%s\n" Print arguments on "Separate lines" and "Tab\tTest"
+
+echo "------ %b ---------------"
+printf "%b\n" "Hello\nworld" "12\tword"
+
+echo "------ %d ---------------"
+printf "%d\n" 23 45 56.78 0xff 011
+
+echo "------ %f ---------------"
+printf "%f\n" 12.34 23 56.789 1.2345678 9
+
+echo "------ %e ---------------"
+printf "%e\n" 12.34 23 56.789 1.2345678 9
+
+echo "------ %x ---------------"
+printf "%x\n" 12.34 8 15
+
+echo "------ %X ---------------"
+printf "%X\n" 12.34 8 15
