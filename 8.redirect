@@ -1,0 +1,27 @@
+#!/bin/bash
+#: Title        : redirect
+#: Date         : 2024-01-19
+#: Author       : Panupong Chamsomboon
+#: Version      : 1.0
+#: Descrtion    : Show information about Redirect
+#: Options      : None
+
+printf "hello one" > hello-1.txt
+printf "hello two" > hello-1.txt
+
+
+printf "hello one\n" > hello-2.txt
+printf "hello two" >> hello-2.txt
+
+printf "%s\n%d\n%v" "Hello one" 24.5 "Test" > hello-3.txt 2> error-3.txt
+
+# printf "%s\n%d\n%v" "Hello four" 24.5 "Test" > hello-4.txt 2>&
+
+printf "%s\n%d\n%v" "Hello four" 24.5 "Test" 2>&1 > hello-5.txt 
+
+printf "%s\n%d\n%v" "Hello four" 24.5 "Test" &> hello-6.txt 
+printf "%s\n%d\n%v" "Hello five" 24.5 "Test2" &> hello-6.txt 
+printf "%s\n%d\n%v" "Hello six" 24.5 "Test2" &>> hello-6.txt 
+
+
+tr ,H wY < hello-6.txt > hello-7.txt
