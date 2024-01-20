@@ -25,3 +25,7 @@ printf "%s\n%d\n%v" "Hello six" 24.5 "Test2" &>> hello-6.txt
 
 
 tr ,H wY < hello-6.txt > hello-7.txt
+
+printf "%s\n%d\n%v" "Hello four" 24.5 "Test" > hello-8.txt 2> error-8.txt
+printf "%s\n%d\n%v" "Hello five" 24.5 "Test2" > hello-8.txt 2> error-8.txt
+printf "%s\n%d\n%v" "Hello six" 24.5 "Test2" >> hello-8.txt 2>> error-8.txt
