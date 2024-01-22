@@ -1,0 +1,9 @@
+#!/bin/bash
+#: Title        : pipelines
+#: Date         : 2024-01-22
+#: Author       : Panupong Chamsomboon
+#: Version      : 1.0
+#: Descrtion    : Show information about Pipeline
+#: Options      : None
+
+printf "%s\n" "$RANDOM" "$RANDOM" "$RANDOM" "$RANDOM" | tee random.txt

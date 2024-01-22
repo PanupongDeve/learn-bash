@@ -1,0 +1,21 @@
+#!/bin/bash
+#: Title        : command-substitution
+#: Date         : 2024-01-22
+#: Author       : Panupong Chamsomboon
+#: Version      : 1.0
+#: Descrtion    : Show information about Command Substitution
+#: Options      : None
+
+# Command Substitution is run command and move to result to variable.It has 2 ways
+
+# 1.backticks
+
+result_one=`date`
+
+printf "Result One = %s\n" "$result_one"
+
+#2.recommand and easy to read
+
+result_two=$( date )
+
+printf "Result Two = %s\n" "$result_two"

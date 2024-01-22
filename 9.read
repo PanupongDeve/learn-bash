@@ -1,0 +1,22 @@
+#!/bin/bash
+#: Title        : read
+#: Date         : 2024-01-22
+#: Author       : Panupong Chamsomboon
+#: Version      : 1.0
+#: Descrtion    : Show information about Read
+#: Options      : None
+
+read a b c d
+
+echo $a
+
+echo $b
+
+echo $c
+
+echo $d
+
+
+read var < ./8.redirect
+
+echo $var
