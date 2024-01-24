@@ -1,0 +1,17 @@
+#!/bin/bash
+#: Title        : check-name
+#: Date         : 2024-01-22
+#: Author       : Panupong Chamsomboon
+#: Version      : 1.0
+#: Descrtion    : check name
+#: Options      : None
+
+
+read name
+if [[ -z $name ]]
+then
+    echo "No name entered" >&2
+    exit 1
+else
+    printf "My name is %s\n" "$name"
+fi
