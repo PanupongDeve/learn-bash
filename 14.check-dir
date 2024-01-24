@@ -1,0 +1,14 @@
+#!/bin/bash
+#: Title        : check-dir
+#: Date         : 2024-01-24
+#: Author       : Panupong Chamsomboon
+#: Version      : 1.0
+#: Descrtion    : program check dir before cd
+#: Options      : None
+
+read dir
+if [ -d "$dir" ] && cd "$dir"
+then
+    echo "$PWD"
+fi
+
